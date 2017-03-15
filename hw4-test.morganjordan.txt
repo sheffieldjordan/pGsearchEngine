@@ -1,0 +1,13 @@
+Morgan Jordan
+INFO 206
+morgan.jordan@berkeley.edu
+hw4-test-morganjordan.txt
+
+What are the boundary cases? 
+Boundary cases for this might be urls that don't work, empty lines in catalog.txt, empty lines in the book text file, or commas in the title. 
+
+What happens if catalog.txt comes in an unexpected format? What happens if a link is broken or the contents come in an unexpected format? etc.  
+If catalog.txt comes in an unexpected format my code will print <<<catalog not readable>>> and end the program. Ideally I would like to also print the line number where the error was found, but I did not have time to research how to do this. If the link is unreadable, I would like to have raised an exception indicating where the exception was found, and then removed it from the catalog. My first attempt at coding this raised other exceptions and problems with my code which I did not have time to research and fix. If the contents of the links arre in an "unexpected" format, I think the code will stll run, but I did not have time to test that scenario. I used the cleaning code from hw3 to read and clean out the puctuation and capital letters.   
+
+How did you test your program?
+I tested the program by accounting for empty lines of text in the catalog, lines missing commas, and words that are not in the Words dictionary. These tests are all accounted for in the script. I also tested for broken urls and commas in the title, but did not have time to write exceptions for these that kept my code intact. 
